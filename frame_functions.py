@@ -172,7 +172,7 @@ def frame2():
     image2.setObjectName("color_detection")
     image3.setObjectName("object_detection")
 
-    image1.setPixmap(QPixmap(u"Photos\eye_detection.png"))
+    image1.setPixmap(QPixmap(u"Photos\eye_detection.png").scaled(200, 300, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.FastTransformation))
     image2.setPixmap(QPixmap(u"Photos\color_detection.png").scaled(200, 300, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.FastTransformation))
     image3.setPixmap(QPixmap(u"Photos\object_detection.png").scaled(200, 300, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.FastTransformation))
 
